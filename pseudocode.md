@@ -1,5 +1,7 @@
 # mindreader
 
+javascript scoping
+
 ### Goals
 - Create this in a "single page application"
 - Need to implement "state" management
@@ -21,10 +23,27 @@
 2. Button
     - GO button for slide 1
     - NEXT button for slides 2-4
-    - REVERT button for slides 2-6
+    - Reverse button for slides 2-6
     - REVEAL button slide 5
     - Change the "state" when one of the buttons is clicked
-3. 
+3. Potential Answer
+    - Needs to show a few numbers and their matching symbols
+    - Stretch goal to be able to scroll through these symbols (if more than 4)
+
+### Objects and Their Functions
+1. Card
+    - text: Present string of header text. Potentially use getElementById to replace with state change
+    - subtext: Present string of subtext. Also use getElementByID to grab then turn text on/off and 
+2. Buttons
+    - hideButton(): hides button depending
+    - goButton(): 1st page button goes to next page on bottom right
+    - nextButton(): goes to next page/calls new state for next card
+    - reverseButton(): returns to previous card
+3. Potential Answer
+    - scroll (unsure how to do this)
+BREAK THESE DOWN
+
+LIST EACH CARD'S STATE
 
 Card 1
 a. "I can read your mind" h1 text at top
@@ -40,23 +59,23 @@ Card 3
 a. "Add both digits together to get a new number" h1 text
 b. "NEXT" button
 c. "Ex: 14 is 1 + 4 = 5 click next to proceed" subtext
-d. Revert button
+d. Reverse button
 
 Card 4
 a. "Subtract your new number from the original number" h1 text
 b. "NEXT" button
 c. "Ex: 14-5=9 click next to proceed" subtext
-d. Revert button
+d. Reverse button
 
 Card 5
 a. Displays something like "0 - &, 1 - @, etc" h1 text. Make this scrollable??
    Also needs to have each number divisible by 9 have the same sign.
 b. "REVEAL" button
 c. "Find your new number. Note the symbol beside the number" subtext
-d. Revert button
+d. Reverse button
 
 Card 6
 a. Displays the & logo in this case
 b. There is no button on this card here
 c. "Your symbol is: &" subtext
-d. Revert button
+d. Reverse button

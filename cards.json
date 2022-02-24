@@ -1,0 +1,43 @@
+{
+    "cardone": {
+        "headertext": "I can read your mind",
+        "nextbutton": false,
+        "subtext": false,
+        "gobutton": true
+    },
+
+    "cardtwo": {
+        "headertext": "Pick a number from 1-99",
+        "nextbutton": true,
+        "subtext": "Click next when you have your number",
+        "gobutton": true
+    },
+
+    "cardthree": {
+        "headertext": "Add both digits together to get a new number",
+        "nextbutton": true,
+        "subtext": "Ex: 14 is 1+4=5 Click next to proceed.",
+        "gobutton": true
+    },
+
+    "**cardfour": {
+        "headertext": "Add both digits together to get a new number",
+        "nextbutton": true,
+        "subtext": "Ex: 14 is 1+4=5 Click next to proceed.",
+        "gobutton": true
+    },
+
+    "**cardfive": {
+        "headertext": ["0-&", "1-!"],
+        "nextbutton": true,
+        "subtext": "Ex: 14 is 1+4=5 Click next to proceed.",
+        "gobutton": true
+    },
+
+    "**cardsix": {
+        "headertext": "Add both digits together to get a new number",
+        "nextbutton": true,
+        "subtext": "Ex: 14 is 1+4=5 Click next to proceed.",
+        "gobutton": true
+    }
+}
