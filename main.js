@@ -13,19 +13,21 @@ console.log("hello world!");
 //for some reason when style.display is "none" it will hide all elements on each card
 function cardOne() {
     document.getElementById('header-text').innerHTML = "I can read your mind.";
-    document.getElementById("next").style.display = "";
-    document.getElementById("subtext").style.display = "";
+    document.getElementById("next").style.visibility = "hidden";
+    document.getElementById("subtext").style.visibility = "hidden";
     document.getElementById("go-restart-button").innerHTML = "GO";
     document.getElementById("go-restart-button").onclick = function() {cardTwo()};
 }
 
-cardOne();
+//cardOne();
 
 function cardTwo() {
     document.getElementById('header-text').innerHTML = "Pick a number from 1-99.";
+    document.getElementById("next").style.visibility = "visible";
     document.getElementById("next").innerHTML = "NEXT";
     document.getElementById("next").onclick = function() {cardThree()};
-    document.getElementById("subtext").innerHTML = "Click next when you have your number";
+    document.getElementById("subtext").style.visibility = "visible";
+    document.getElementById("subtext").innerHTML = "Click next when you have your number.";
     document.getElementById("go-restart-button").innerHTML = "RESTART";
     document.getElementById("go-restart-button").onclick = function() {cardOne()};
 }
@@ -62,12 +64,15 @@ function cardFive() {
 
 function cardSix() {
     document.getElementById('header-text').innerHTML = "Your answer is...";
-    document.getElementById("next").innerHTML = "none";
+    document.getElementById("next").style.visibility = "hidden";
+    //document.getElementById("next").innerHTML = "none";
     //document.getElementById("next").onclick = function() {cardFive()};
     document.getElementById("subtext").style.display = "";
     document.getElementById("go-restart-button").innerHTML = "RESTART";
     document.getElementById("go-restart-button").onclick = function() {cardOne()};
 }
+
+cardOne();
 
 
 
