@@ -74,7 +74,7 @@ function cardSix() {
 
 cardOne();
 
-
+//delete line test
 
 // cardone = {headertext:"I can read your mind", nextbutton: false, subtext: false, gobutton: true};
 // cardtwo = {headertext:"Pick a number from 1-99", nextbutton: true, subtext: "Click next when you have your number", revertbutton: true};
