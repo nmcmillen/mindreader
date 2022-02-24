@@ -2,6 +2,26 @@
 
 console.log("hello world!");
 
+const symbols = ["!","@","#","$","%","^","&","*","?"]
+
+// for (let i = 0; i < 99; i++) {
+//     console.log((i+1) + ' - ' + symbols[i % symbols.length])
+// }
+
+function numberGen () {
+    let result = '';
+    for (let i = 0; i < 99; i++) {
+    result += ((i+1) + ' - ' + symbols[i % symbols.length]);
+}
+return result
+}
+
+//let fun = () => {}
+
+let symbolGen = numberGen()
+
+console.log(symbolGen)
+
 function cardOne() {
     document.getElementById('header-text').innerHTML = "I can read your mind.";
     document.getElementById("next").style.visibility = "hidden";
@@ -40,7 +60,7 @@ function cardFour() {
 }
 
 function cardFive() {
-    document.getElementById('header-text').innerHTML = "0 - & <br>1 - @ <br>2 - $ <br>3 - B";
+    document.getElementById('header-text').innerHTML = symbolGen;
     document.getElementById("next").innerHTML = "REVEAL";
     document.getElementById("next").onclick = function() {cardSix()};
     document.getElementById("subtext").innerHTML = "Click reveal for your answer.";
@@ -49,7 +69,7 @@ function cardFive() {
 }
 
 function cardSix() {
-    document.getElementById('header-text').innerHTML = "Your symbol is: &";
+    document.getElementById('header-text').innerHTML = "Your symbol is: + (symbols[9])";
     document.getElementById("next").style.visibility = "hidden";
     //document.getElementById("next").innerHTML = "none";
     //document.getElementById("next").onclick = function() {cardFive()};

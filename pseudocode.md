@@ -79,3 +79,8 @@ a. Displays the & logo in this case
 b. There is no button on this card here
 c. "Your symbol is: &" subtext
 d. Reverse button
+
+
+### Scroll table
+Create an array of symbols
+Match numbers to symbols
