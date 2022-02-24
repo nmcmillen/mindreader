@@ -78,19 +78,6 @@ function cardSix() {
 // cardfive = {headertext:"I can read your mind", nextbutton: false, subtext: false, revertbutton: true};
 // cardsix = {headertext:"I can read your mind", nextbutton: false, subtext: false, revertbutton: true};
 
-// function state1() {
-    //     document.getElementById('instructions').innerHTML = "I can read your mind";
-    //     document.getElementById('go').innerHTML = "GO";
-//     // Hide NEXT button so it can appear on later slides
-//     document.getElementById("next").style.display = "none";
-//     document.getElementById('subText').innerHTML = "";
-//     go();
-//     next.removeEventListener('click', state3);
-//     next.removeEventListener('click', state4);
-//     next.removeEventListener('click', state5);
-//     next.removeEventListener('click', state6);
-// };
-
 
 
 
