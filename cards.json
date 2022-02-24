@@ -35,9 +35,9 @@
     },
 
     "**cardsix": {
-        "headertext": "Add both digits together to get a new number",
-        "nextbutton": true,
-        "subtext": "Ex: 14 is 1+4=5 Click next to proceed.",
+        "headertext": "Your answer is...",
+        "nextbutton": false,
+        "subtext": "none",
         "gobutton": true
     }
 }

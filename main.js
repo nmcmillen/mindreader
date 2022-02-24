@@ -2,15 +2,6 @@
 
 console.log("hello world!");
 
-//let gobutton = getElementById("go-restart-button");
-
-// function go() {
-//     gobutton.addEventListener('click', cardTwo)
-// }
-
-//document.getElementById("go-restart-button").onclick = function() {cardTwo()};
-
-//for some reason when style.display is "none" it will hide all elements on each card
 function cardOne() {
     document.getElementById('header-text').innerHTML = "I can read your mind.";
     document.getElementById("next").style.visibility = "hidden";
@@ -18,8 +9,6 @@ function cardOne() {
     document.getElementById("go-restart-button").innerHTML = "GO";
     document.getElementById("go-restart-button").onclick = function() {cardTwo()};
 }
-
-//cardOne();
 
 function cardTwo() {
     document.getElementById('header-text').innerHTML = "Pick a number from 1-99.";
@@ -31,8 +20,6 @@ function cardTwo() {
     document.getElementById("go-restart-button").innerHTML = "RESTART";
     document.getElementById("go-restart-button").onclick = function() {cardOne()};
 }
-
-//cardTwo();
 
 function cardThree() {
     document.getElementById('header-text').innerHTML = "Add both digits together to get a new number.";
@@ -53,28 +40,26 @@ function cardFour() {
 }
 
 function cardFive() {
-    document.getElementById('header-text').innerHTML = "0 - &, 1 - @";
+    document.getElementById('header-text').innerHTML = "0 - & <br>1 - @ <br>2 - $ <br>3 - B";
     document.getElementById("next").innerHTML = "REVEAL";
     document.getElementById("next").onclick = function() {cardSix()};
-    document.getElementById("subtext").innerHTML = "";
+    document.getElementById("subtext").innerHTML = "Click reveal for your answer.";
     document.getElementById("go-restart-button").innerHTML = "RESTART";
     document.getElementById("go-restart-button").onclick = function() {cardOne()};
 }
 
-
 function cardSix() {
-    document.getElementById('header-text').innerHTML = "Your answer is...";
+    document.getElementById('header-text').innerHTML = "Your symbol is: &";
     document.getElementById("next").style.visibility = "hidden";
     //document.getElementById("next").innerHTML = "none";
     //document.getElementById("next").onclick = function() {cardFive()};
+    document.getElementById("subtext").style.visibility = "hidden";
     document.getElementById("subtext").style.display = "";
     document.getElementById("go-restart-button").innerHTML = "RESTART";
     document.getElementById("go-restart-button").onclick = function() {cardOne()};
 }
 
 cardOne();
-
-//delete line test
 
 // cardone = {headertext:"I can read your mind", nextbutton: false, subtext: false, gobutton: true};
 // cardtwo = {headertext:"Pick a number from 1-99", nextbutton: true, subtext: "Click next when you have your number", revertbutton: true};
