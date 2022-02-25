@@ -2,6 +2,7 @@
 
 console.log("hello world!");
 
+//set up array of symbols to be used on page 4
 const symbols = ["!","@","#","$","%","^","&","*","?"]
 
 function numberGen () {
@@ -13,9 +14,6 @@ function numberGen () {
 }
 
 let symbolGen = numberGen()
-
-//let fun = () => {}
-// console.log(symbolGen)
 
 function cardOne() {
     document.getElementById('header-text').innerHTML = "I can read your mind.";
@@ -90,31 +88,3 @@ function cardSix() {
 }
 
 cardOne();
-
-
-
-
-// for (let i = 0; i < 99; i++) {
-//     console.log((i+1) + ' - ' + symbols[i % symbols.length])
-// }
-
-
-// cardone = {headertext:"I can read your mind", nextbutton: false, subtext: false, gobutton: true};
-// cardtwo = {headertext:"Pick a number from 1-99", nextbutton: true, subtext: "Click next when you have your number", revertbutton: true};
-// cardthree = {headertext:"Add both digits together to get a new number.", nextbutton: true, subtext: "Ex: 14 is 1+4=5 Click next to proceed.", revertbutton: true};
-// cardfour = {headertext:"Subtract your new number from the original number", nextbutton: true, subtext: "Ex: 14-5=9 Click next to proceed.", revertbutton: true};
-// cardfive = {headertext:"I can read your mind", nextbutton: false, subtext: false, revertbutton: true};
-// cardsix = {headertext:"I can read your mind", nextbutton: false, subtext: false, revertbutton: true};
-
-
-// function getData(cardData) {
-    //     console.log(cardData);
-    // }
-    
-    // //function getData()
-    
-    // fetch("cards.json")
-    //     .then(response => {
-        //     return response.json();
-        //     })
-        //     .then(jsondata => getData(jsondata));
