@@ -3,9 +3,10 @@
 console.log("hello world!");
 
 //set up array of symbols to be used on page 4
-const symbols = ["!","@","#","$","%","^","&","*","?"]
+let symbols = ["!","@","#","$","%","^","&","*","?"]
 
 function numberGen () {
+    console.log('number')
     let result = '';
     for (let i = 0; i < 99; i++) {
         result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
@@ -13,9 +14,24 @@ function numberGen () {
     return result
 }
 
-let symbolGen = numberGen()
+const shuffleSymbols = symbols => {
+    for (let i = symbols.length -1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = symbols[i];
+        symbols[i] = symbols[j];
+        symbols[j] = temp;
+        console.log(symbols)
+    }
+    return symbols;
+};
+
+
+console.log(symbols);
+
+//let symbolGen = numberGen()
 
 function cardOne() {
+    symbols = shuffleSymbols(symbols);
     document.getElementById('header-text').innerHTML = "I can read your mind.";
     document.getElementById("next").style.visibility = "hidden";
     document.getElementById("subtext").style.visibility = "hidden";
@@ -64,7 +80,7 @@ function cardFour() {
 }
 
 function cardFive() {
-    document.getElementById('header-text').innerHTML = symbolGen;
+    document.getElementById('header-text').innerHTML = numberGen();
     document.getElementById("next").style.visibility = "visible";
     document.getElementById("next").innerHTML = "REVEAL";
     document.getElementById("next").onclick = function() {cardSix()};
