@@ -6,7 +6,6 @@ console.log("hello world!");
 let symbols = ["!","@","#","$","%","^","&","*","?"]
 
 function numberGen () {
-    console.log('number')
     let result = '';
     for (let i = 0; i < 99; i++) {
         result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
@@ -24,9 +23,6 @@ const shuffleSymbols = symbols => {
     }
     return symbols;
 };
-
-
-console.log(symbols);
 
 //let symbolGen = numberGen()
 
